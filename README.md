@@ -3,7 +3,7 @@
 This is a simple Ruby on Rails app that searches a large CSV data source and returns the results in a 
 table-like grid. 
 
-##How to Run:
+## How to Run:
 
 Please fork the repo and simply `cd` into the app directory
 and run `rails s` in the terminal (to start rails server). 
@@ -14,7 +14,7 @@ and the site should load.
 Search for any word in the search bar and the results area will return all the data rows 
 that contain that word.
 
-###Tools Used:
+### Tools Used:
 
 * MySql database
 * [simple-form](https://github.com/plataformatec/simple_form)
