@@ -2,10 +2,19 @@
   <div class="row">
     <div class="col-xs-12 col-sm-8 offset-sm-2">
       <h1>Reviews</h1>
-      <% @reviews.each do |review| %>
-        <h3><%= review.id %></h3>
-        <p><%= review.text %></p>
+      <hr>
+      <%= simple_form_for :search, url: root_path, method: "GET", html: { class: 'form-inline' } do |f| %>
+        <div class="search-text"><%= f.input :text, input_html: {value: ""} %></div>
+        <div class="search-button"><%= f.submit "Search", class: "btn btn-primary" %></div>
       <% end %>
+      <table class="results-table">
+      <% @reviews.each do |review| %>
+        <tr>
+          <td class="id"><%= review.id %></td>
+          <td class="review"><%= review.text %></td>
+        </tr>
+      <% end %>
+      </table>
     </div>
   </div>
 </div>
