@@ -1,24 +1,29 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This is a simple Ruby on Rails app that searches a large CSV data source and returns the results in a 
+table-like grid. 
 
-Things you may want to cover:
+##How to Run:
 
-* Ruby version
+Please fork the repo and simply `cd` into the app directory
+and run `rails s` in the terminal (to start rails server). 
 
-* System dependencies
+Navigate to `localhost:3000` in a web browser
+and the site should load. 
 
-* Configuration
+Search for any word in the search bar and the results area will return all the data rows 
+that contain that word.
 
-* Database creation
+###Tools Used:
 
-* Database initialization
+* MySql database
+* [simple-form](https://github.com/plataformatec/simple_form)
+* Rails 5
+* Ruby 2.6.3
+* Bootstrap
+* Google Fonts
 
-* How to run the test suite
+Enjoy!
 
-* Services (job queues, cache servers, search engines, etc.)
 
-* Deployment instructions
 
-* ...
